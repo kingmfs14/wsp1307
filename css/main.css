@@ -1,0 +1,312 @@
+/*--------------Color Codes----------
+
+#09C = Blue Teal
+#006 = Navy Blue
+#C96 = Sandy Tan
+
+----------------Color Codes--------*/
+
+
+/*-------Sections------------------*/
+
+body {
+	background-color: #FFF;
+	color: #666;
+	font: .87em/1.5 Verdana, Arial, Helvetica, sans-serif; /* 14px/16px */
+	margin: 0 auto;
+	max-width: 790px;
+}
+
+nav {
+	width: 75.949367088608%; /* 600px/790px */
+	float: right;
+}
+
+section {
+	margin-top: 2.53164556962%; /* 20px/790px */
+	margin-bottom: 2.53164556962%; /* 20px/790px */
+	clear: both;
+	-moz-column-count: 3;
+	padding: 0 1.898734177215%; /* 15px/790px */
+}
+
+header {
+	margin-left: 67.848101265823%; /* 536px/790px */
+}
+
+aside {
+	background-color: #C96;
+	border-radius: 10px;
+	width: 32.025316455696%; /* 253px/790px */
+	float: right;
+	margin: 1.2658227848110% 0; /* 10px/790px */
+}
+
+/*-------Specific Elements------------*/
+
+
+#wrapper {
+	width: 100%; /* 790px */
+	margin: 0 auto;	
+	overflow: hidden;
+}
+
+#header {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-color: #006;
+	overflow: hidden;
+	margin: 0;
+	border-bottom-left-radius: 15px;	
+	border-bottom-right-radius: 15px;	
+}
+
+article p {
+	text-align: justify;
+	padding: 0 1.898734177215%;
+}
+
+footer p {
+	text-align: right;
+	font-style: italic;
+}
+
+#footer {
+	clear: both;
+	padding-top: 1.26582278481%; /* 10px/790px */
+	text-align: center;
+	font-size: .71em; /* 10px*/	
+}
+
+#footer ul {
+	list-style-type: none;
+}
+
+#footer ul li {
+	display: inline;
+	margin: 0 3.79746835443% 0 0; /* 30px/14px */
+}
+
+#footer a {
+	font-weight: bold;
+}
+
+/*-------Elements---------------------*/
+
+h1 a{
+	margin-left: 2.53164556962%; /* 20px/790px */
+	color: #C96;
+	font-family:'Trade Winds', cursive;
+	text-decoration: none;
+}
+
+h2, h3 {
+	font-family: 'Wallpoet', cursive;
+}
+
+h2 {
+	text-shadow: 2px 2px 5px #999;
+	color: #09C;
+}
+
+h3 {
+	color: #000;
+	margin-left: 2.53164556962%; /* 20px/790px */
+}
+
+a {
+	text-decoration: none;
+	color: #960;
+}
+
+ol {
+	color: #000;
+	opacity: 0.6;
+}
+
+/*-------Navigation Elements--------*/
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	float: right;
+	display: block;
+	margin: 0 1.898734177215% 0 0; /* 15px/790px */
+}
+
+nav ul li a, a:visited {
+	text-align: center;	
+	height: 3.291139240506%; /* 26px/790px */
+	line-height: 3.291139240506%; /* 26px/790px */
+	color: #FFF;
+	padding: 3px; /*3px*/
+}
+
+nav ul li a:hover, a:active, a:focus {
+	background-color: #FFF;
+	color: #006;
+}
+
+/*-------Gallery Elements------------*/
+
+#gallery {
+	width: 66.582278481013%; /* 526px/790px */
+	float: left;
+}
+
+#gallery ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+#gallery ul li {
+	float: left;
+	margin: 1.26582278481% 2.53164556962% 0 0; /* 10px/790px 20px/790px 0 0 */
+}	
+
+#gallery img {
+	width: 99.585062240664%;
+	border: 1px solid #000;
+}
+
+/*-------Button Elements------------*/
+
+.button {
+	width: 63.291139240506%; /* 500px/790px */
+	float: left;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 1em/1 Arial, Helvetica, sans-serif;
+	margin: 1.898734177215% 0; /* 15px/790px */
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #fef4e9;
+	border: solid 1px #24836C;
+	background: #006;
+	background: -webkit-gradient(linear, left top, left bottom, from(#09C), to(#006));
+	background: -moz-linear-gradient(top,  #09C,  #006);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#09C', endColorstr='#006');
+}
+.button:hover {
+	text-decoration: none;
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#096), to(#09F));
+	background: -moz-linear-gradient(top,  #096,  #09F);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#096', endColorstr='#09F');
+}
+.button:active {
+	position: relative;
+	top: 0.190114068441%; /* 1px/526px */
+	background: -webkit-gradient(linear, left top, left bottom, from(#006), to(#09C));
+	background: -moz-linear-gradient(top,  #006,  #09C);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006', endColorstr='#09C');
+}
+
+/*-------Table Elements------------*/
+
+#table {
+	float: left;
+}
+
+table {
+	margin-left: 5.06329113924%; /*40px/790px*/
+	border-collapse: collapse;
+	border: solid 1px #000;
+}
+
+th {
+	text-align: left;
+	padding: 0.2em 0.5em;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006), to(#09C));
+	background: -moz-linear-gradient(top,  #006,  #09C);
+	color: #fff;
+}
+
+td {
+	border: solid 1px #000;
+	text-align: center;
+}
+
+.odd {
+	background: #09C;
+	color: #ffc;
+}
+
+/*-------Form Elements------------*/
+
+#form_wrap {
+	clear: both;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 2.5%;
+}
+
+#personal_info {
+	float: left;
+	width: 45%;
+}
+
+#contact_info {
+	float: right;
+	width: 45%;
+}
+
+.text input {
+	width: 90%;
+}
+
+.radio input {
+	margin-left: 10%;
+}
+
+input:focus {
+	background-color: #ffc;
+}
+
+#input {
+	clear: both;
+}
+
+
+
+/*--------Media Queries--------------*/
+
+	/* Tablet portrait size to standard 790	(devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width: 789px) {
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		header {margin-left: 3.164556962025%; /* 536px/790px */}
+		aside {display: none;}
+	}
+	
+	/* Mobile Landscape size to Tablet portrait size (devices and browsers) */
+	@media screen and (min-width: 726px) and (max-width: 767px) {
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		header {margin-left: 3.164556962025%; /* 536px/790px */}
+		aside, #footer #copy, #footer #plug {display: none;}
+		#footer {text-align: center;}
+	}
+
+	/* Mobile Portrait size to Mobile Landscape size (devices and browsers) */
+	@media only screen and (max-width: 725px) {
+		nav, nav ul li {float:none; margin-left: 5.063291139241%;} /*30px/790px*/
+		section {-moz-column-count: 1;}
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		article, #footer #copy, #footer #plug {display: none;}
+		aside {overflow: hidden; float: none; margin-left: 9.5%; width: 81%}
+		#personal_info, #contact_info {float: none; width: 95%;}
+		#footer {text-align: center;}
+	}
