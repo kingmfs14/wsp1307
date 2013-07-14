@@ -27,6 +27,41 @@ nav ul li a, a:visited {
 	line-height: 3.291139240506%; /* 26px/790px */
 	padding: 3px; /*3px*/
 }
+
+/*-------Form Elements------------*/
+
+#form_wrap {
+	clear: both;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 2.5%;
+}
+
+#personal_info {
+	float: left;
+	width: 45%;
+}
+
+#contact_info {
+	float: right;
+	width: 45%;
+}
+
+.text input {
+	width: 90%;
+}
+
+.radio input {
+	margin-left: 10%;
+}
+
+input:focus {
+	background-color: #ffc;
+}
+
+#input {
+	clear: both;
+}
  
 
 /* =============================================================================
