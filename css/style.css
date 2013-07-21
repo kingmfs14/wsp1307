@@ -7,26 +7,95 @@ Copyright 2013, Josh Cope
    Site Styles
    ========================================================================== */
    
-article {
-	
-}  
+.container {
+	color: #666;
+}
+
+header {
+	background-image: url(../images/header_widebg.jpg);
+	background-repeat: none;
+	border-bottom-left-radius: 15px;	
+	border-bottom-right-radius: 15px;	
+}
+
+/*-------------Non Specific Elements--------------*/
+
+h1 a {
+	margin-left: 1.25%;
+	color: #C96;
+	font-family:'Trade Winds', cursive;
+	text-decoration: none;
+}
+
+h2, h3 {
+	font-family: 'Wallpoet', cursive;
+}
+
+h2 {
+	text-shadow: 2px 2px 5px #999;
+	color: #09C;
+}
+
+h3 {
+	color: #000;
+	margin-left: 2.53164556962%; /* 20px/790px */
+}
+
+h4 {
+	font-family: 'Almendra', serif;
+	color: #000;
+	font-size: 1.5em;
+}
+
+a, a:visited {
+	color: #C96;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+img {
+	margin: 1%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	margin: 0 2% 0 0;
+}
+
 
 /*-------Navigation Elements--------*/
 
 nav ul {
 	list-style-type: none;
+	margin-left: 35%;
 }
 
 nav li {
 	display: inline;
+	margin: 0 2% 0 0;
 }
 
-nav ul li a, a:visited {
-	text-align: center;	
-	height: 3.291139240506%; /* 26px/790px */
-	line-height: 3.291139240506%; /* 26px/790px */
-	padding: 3px; /*3px*/
+nav ul li a, nav ul li a:visited {
+	text-align: right;	
+	height: 3.25%;
+	line-height: 3.25%;
+	padding: 3px;
+	color: #fff;
+	text-decoration: none;
 }
+
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+	background-color: #FFF;
+	color: #006;
+	border-radius: 5px;
+}
+
 
 /*-------Form Elements------------*/
 
@@ -62,11 +131,47 @@ input:focus {
 #input {
 	clear: both;
 }
- 
 
 /* =============================================================================
    Page Styles
    ========================================================================== */
+   
+#testimonial {
+	background-image: url(../images/sheet_bg.jpg);
+	background-repeat: repeat;
+	color: #333;
+	margin-left: 5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	border-radius: 15px;
+} 
+
+#staff p {
+	-moz-column-count: 3;
+} 
+
+article img {
+	margin: 4%;
+}
+
+#bring_it {
+	background-color: #009899;
+	color: #ffc;
+	margin-left: 7%;
+	padding-left: .5%;
+	padding-right: .5%;
+	border-radius: 15px;
+}
+
+#scuba {
+	margin-left: 32.5%;
+}
+
+#scuba li {
+	font-weight: bold;
+	color: #009899;
+	font-size: 1.2em;
+}
 
 /* =============================================================================
    Media Queries
@@ -76,10 +181,13 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 995px) {}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	header {background-image: url(../images/header_midbg.jpg);}
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {}
