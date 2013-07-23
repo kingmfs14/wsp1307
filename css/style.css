@@ -38,7 +38,7 @@ h2 {
 
 h3 {
 	color: #000;
-	margin-left: 2.53164556962%; /* 20px/790px */
+	margin-left: 2.5%;
 }
 
 h4 {
@@ -63,7 +63,7 @@ ul {
 	list-style-type: none;
 }
 
-li {
+ul li {
 	display: inline;
 	margin: 0 2% 0 0;
 }
@@ -182,20 +182,22 @@ fieldset {
 	padding: 2.5%;
 }
 
-#personal_info {
+#personal_info, #contact_info {
 	margin-bottom: 2.5%;
-	float: left;
 	width: 40%;
 }
 
+#personal_info {
+	float: left;
+}
+
 #contact_info {
-	margin-bottom: 2.5%;
 	float: right;
-	width: 40%;
 }
 
 .text input {
 	width: 90%;
+	margin-bottom: 1.5%;
 }
 
 .radio input {
@@ -208,6 +210,48 @@ input:focus {
 
 #input {
 	clear: both;
+	margin-bottom: 1.5%;
+}
+
+/*-------Button Elements------------*/
+
+.button {
+	float: right;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 1em/1 Arial, Helvetica, sans-serif;
+	margin: 2% 10%; 
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #fef4e9;
+	border: solid 1px #24836C;
+	background: #006;
+	background: -webkit-gradient(linear, left top, left bottom, from(#09C), to(#006));
+	background: -moz-linear-gradient(top,  #09C,  #006);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#09C', endColorstr='#006');
+}
+.button:hover {
+	text-decoration: none;
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#096), to(#09F));
+	background: -moz-linear-gradient(top,  #096,  #09F);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#096', endColorstr='#09F');
+}
+.button:active {
+	position: relative;
+	top: 0.2%; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#006), to(#09C));
+	background: -moz-linear-gradient(top,  #006,  #09C);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006', endColorstr='#09C');
 }
 
 
@@ -216,19 +260,42 @@ input:focus {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	nav ul {margin-left: 7.5%;}
+	.radio input {margin-left: 30%;}
+	#scuba {margin-left: 35%;}
+	#scuba li {display: block;}
+}
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	header {background-image: url(../images/header_midbg.jpg);}
+	nav ul {margin-left: 10%;}
+	nav li {display: block; margin-bottom: 2%;}
+	nav ul li a, nav ul li a:visited {font-size: 1.2em;}
+	#staff {display: none;}
+	#testimonial {display: none;}
+	#scuba {margin-left: 0%;}
+	#scuba li {display: block;}
+	#personal_info, #contact_info {float: none;}
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	header {background-image: url(../images/header_midbg.jpg);}
+	#bring_it {margin-left: 4%;}
+	#personal_info, #contact_info {width: 94.5%;}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	header {background-image: url(../images/header_smbg.jpg);}
+	h1 a {margin-left: 10%;}
+	#bring_it {margin-left: 6%;}
+	#personal_info, #contact_info {width: 86.5%;}
+	#form_wrapper {border: 0px;}
+	.radio input {margin-left: 30%;}
+	.button {float: none;}
+}
 
 
 /* =============================================================================
