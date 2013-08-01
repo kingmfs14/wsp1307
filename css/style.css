@@ -268,6 +268,7 @@ input:focus {
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 	nav ul {margin-left: 7.5%;}
+	#staff p {-moz-column-count: 1;} 
 	#bring_it {margin-top: 5%;}
 	.radio input {margin-left: 30%;}
 	#scuba {margin-left: 35%;}
