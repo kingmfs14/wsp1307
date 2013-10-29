@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Maui Underwater Excursions</title>
+		<link href='css/normalize.css' rel='stylesheet'>
+		<link href='css/base.css' rel='stylesheet'>
+		<link href='css/grid.css' rel='stylesheet'>
+		<link href='css/style.css' rel='stylesheet'>
+		<link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		
+		<div class="container">
+	
+		<header class="grid_12">
+		
+			<h1><a href="index.html">Underwater Excursions</a></h1>
+			
+			<nav class="grid_12">
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="scuba.html">Scuba</a></li>
+					<li><a href="snorkel.html">Snorkeling</a></li>
+					<li><a href="kayak.html">Kayaking</a></li>
+					<li><a href="whale.html">Whale Watching</a></li>
+					<li class="current"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav> <!-- End of the navigation -->	
+			
+		</header> <!-- End of the header -->
+
+		<div id="form_wrap">
+					
+			<form  method="post" action="mailto:info@mauiexcursions.com">
+				
+				<fieldset id="form_wrapper">
+					<legend>Drop Us a Line</legend>
+						<fieldset id="personal_info">
+							<legend>Personal Information</legend>
+								<div class="text">
+									<label for="first_name">First Name:</label>
+									<input type="text" name="first_name" id="first_name"/>
+								</div>
+								<div class="text">
+									<label for="last_name">Last Name:</label>
+									<input type="text" name="last_name" id="last_name"/>
+								</div>
+									<label for="location">I am a</label>
+										<div class="radio">
+											<input type="radio" name="location" value="visiting">
+											<label for="visiting">Visitor</label>
+											</br>
+											<input type="radio" name="location" value="islander" id="radio_br">
+											<label for="islander">Neighboring Islander</label>
+											</br>
+											<input type="radio" name="location" value="local" id="radio_br">
+											<label for="local">Local</label>
+										</div>
+						</fieldset>
+						<fieldset id="contact_info">
+							<legend>Contact Information</legend>
+								<div class="text">
+									<label for="phone">Mobile Phone:</label>
+									<input type="text" name="phone" id="phone"/>
+								</div>
+								<div class="text">
+									<label for="email">Email:</label>
+									<input type="text" name="email" id="email"/>
+								</div>
+									<label for="contact">Preferred Contact by:</label>
+										<div class="radio">
+											<input type="radio" name="contact" value="phone">
+											<label for="phone">Phone</label>
+											</br>
+											<input type="radio" name="contact" value="email" id="radio_br">
+											<label for="email">Email</label>
+										</div>
+						</fieldset>
+						<div id="input">
+							<label for="ecursion">What Excursion are you Most interested in?</label>
+							<select name="excursion" id="excursion">
+								<option>Whale Watching</option>
+								<option selected="selected">Kayaking</option>
+								<option>Spear Fishing</option>
+								<option>Snorkeling</option>
+								<option>Scuba</option>
+							</select>
+						</div>
+						<div>
+							<label for="message">Request More Detail:</label>
+							<textarea rows="10" cols="30" name="message" id="message"></textarea>
+						</div>
+						<div>
+							<button type="submit" name="submit" class="button">Send Request</button>
+						</div>
+				</fieldset>
+			</form>
+		</div> <!-- End of Form -->
+					
+		<footer class="grid_12">
+			
+				<p class="grid_3 alpha">&copy; 2013 <a href="#">Inquire Designs</a></p>
+				
+				<p class="grid_5 prefix_4 omega">Follow Us on <a href="#">@MUExcursions</a> and <a href="#">Facebook</a></p>
+			
+		</footer> <!-- This is the end of the footer -->
+		
+		</div> <!-- This is the end of the container -->
+		
+	</body>
+
+</html>

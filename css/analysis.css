@@ -1,0 +1,81 @@
+/*--------------Color Codes----------
+
+#80CCE6 = Light Blue Teal
+#006 = Navy Blue
+#C96 = Sandy Tan
+
+----------------Color Codes--------*/
+
+/*-------Sections------------------*/
+
+body {
+	background-color: #fff;
+	color: #000;
+	font: .87em/1.5 Verdana, Arial, Helvetica, sans-serif; /* 14px/16px */
+	margin: 0 auto;
+	max-width: 790px;
+}
+
+/*-------Specific Elements------------*/
+
+
+#container {
+	width: 100%; /* 790px */
+	background-color: #80CCE6;
+	border: solid 5px #C96;
+	margin: 0 auto;	
+	padding: 3.164556962025%; /*25px/790px*/
+	overflow: hidden;
+}
+
+/*-------Elements---------------------*/
+
+strong {
+	color: #006;
+}
+
+h2 {
+	color: #006;
+	margin-top: 3.164556962025%; /*25px/790px*/
+	padding-bottom: 1.26582278481%; /*10px/790px*/
+	border-bottom: 2px solid #006;
+}
+
+h3 {
+	color: #000;
+}
+
+ol {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+ol li {
+	display: block;
+}
+
+a, a:visited {
+	color: #666;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+
+
+/*--------Media Queries--------------*/
+
+	/* Tablet portrait size to standard 790	(devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width: 789px) {
+	}
+	
+	/* Mobile Landscape size to Tablet portrait size (devices and browsers) */
+	@media screen and (min-width: 614px) and (max-width: 767px) {
+	}
+
+	/* Mobile Portrait size to Mobile Landscape size (devices and browsers) */
+	@media only screen and (max-width: 613px) {
+		#container {border: none;}
+	}
